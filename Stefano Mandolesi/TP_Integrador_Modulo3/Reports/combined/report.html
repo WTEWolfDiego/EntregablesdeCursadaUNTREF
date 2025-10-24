@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Mochawesome Report Card</title><link rel="stylesheet" href=".\web\assets/app.css"/></head>
+<style>body{font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial; margin:0;padding:0;} .combined-header{padding:20px;background:#f6f6f6;border-bottom:1px solid #ddd;} .report-section{padding:20px} .report-frame{border:1px solid #e6e6e6;padding:10px;background:white;margin-bottom:30px}</style>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial;margin:0;padding:0}
+  .combined-header{padding:20px;background:#f6f6f6;border-bottom:1px solid #ddd}
+  .frames{display:flex;flex-direction:column;gap:20px;padding:20px}
+  .report-iframe{width:100%;height:900px;border:1px solid #ddd}
+  .iframe-actions{margin-top:8px}
+</style>
+</head>
+<body>
+  <div class="combined-header">
+    <h1>Combined Report</h1>
+    <p>Generated: 2025-10-24T19:25:34.398Z</p>
+    <p>Contains: Web (Saucedemo) and API (PokeAPI) reports</p>
+    <p><a href="./web/mochawesome.html" target="_blank">Open Web report (separate)</a> | <a href="./api/mochawesome.html" target="_blank">Open API report (separate)</a></p>
+  </div>
+  <div class="frames">
+    <section>
+      <h2>Web report</h2>
+      <div class="iframe-actions"><button onclick="document.getElementById('frame-web').style.height='auto';document.getElementById('frame-web').style.height=document.getElementById('frame-web').contentWindow.document.body.scrollHeight + 'px'">Resize iframe to content</button></div>
+      <iframe id="frame-web" class="report-iframe" src="./web/mochawesome.html"></iframe>
+    </section>
+    <section>
+      <h2>API report</h2>
+      <div class="iframe-actions"><button onclick="document.getElementById('frame-api').style.height='auto';document.getElementById('frame-api').style.height=document.getElementById('frame-api').contentWindow.document.body.scrollHeight + 'px'">Resize iframe to content</button></div>
+      <iframe id="frame-api" class="report-iframe" src="./api/mochawesome.html"></iframe>
+    </section>
+  </div>
+</body>
+</html>
